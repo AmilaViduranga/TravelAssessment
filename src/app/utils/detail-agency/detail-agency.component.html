@@ -1,0 +1,27 @@
+<section>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 row">
+      <div class="col-sm-4" style="padding-left: 40px;">
+        <youtube-player
+          [videoId]="agencyInfo.videoUrl"
+          [width]="360"
+          [height]="500"
+        ></youtube-player>
+      </div>
+      <div class="col-sm-8">
+        <small>{{agencyInfo.smallTitle}}</small>
+        <h3>{{agencyInfo.header}}</h3>
+        <p>{{agencyInfo.description}}</p>
+        <p>{{agencyInfo.description}}</p>
+        <span>
+          <i class="fa fa-facebook fa-3x"></i>&nbsp;
+          <i class="fa fa-twitter fa-3x"></i>&nbsp;
+          <i class="fa fa-youtube fa-3x"></i>&nbsp;
+          <i class="fa fa-instagram fa-3x"></i>
+        </span>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</section>

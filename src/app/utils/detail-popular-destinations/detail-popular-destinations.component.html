@@ -1,0 +1,23 @@
+<section style="padding-top: 20px;">
+  <div class="row" style="text-align: center;">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <h3>Popular Destination</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 row">
+      <ngx-slick-carousel class="carousel" 
+          #slickModal="slick-carousel" 
+          [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of availableImages" class="slide">
+        <img src="{{ slide.imageUrl }}" alt="" width="400" height="300" style="cursor: pointer;">
+        </div>
+      </ngx-slick-carousel>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</section>

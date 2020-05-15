@@ -1,0 +1,47 @@
+<section style="padding-top: 20px; padding-bottom: 20px;">
+  <div class="row" style="text-align: center;">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <h3>Popular Holiday</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+    <div class="col-sm-2"></div>
+  </div><br><br>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 row">
+      <div class="col-sm-3" *ngFor="let holiday of availableHolidays">
+        <div class="grid__item">
+          <div class="card">
+            <img class="card__img" [src]="holiday.image" alt="Snowy Mountains">
+            <div class="card__content">
+              <div class = "row">
+                <div class="col-sm-6">
+                  <h3 class="card__header">{{holiday.header}}</h3>
+                  <rating [(ngModel)]="holiday.rate" [max]="4" [readonly]="true"></rating>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4" style="padding-top: 30px;">
+                  <span style="color: red;">${{holiday.price}}</span>
+                </div>
+              </div>
+              <p>{{holiday.description}}</p>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <div class="row" style="text-align: center; padding-top: 20px;">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <button class="btn btn-danger" style="height: 40px; border-radius: 5%;">More Places</button>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</section>
