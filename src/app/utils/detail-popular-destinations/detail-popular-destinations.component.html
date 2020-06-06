@@ -14,7 +14,7 @@
           #slickModal="slick-carousel" 
           [config]="slideConfig">
         <div ngxSlickItem *ngFor="let slide of availableImages" class="slide">
-        <img src="{{ slide.imageUrl }}" alt="" width="400" height="300" style="cursor: pointer;">
+        <img class="img-fluid" src="{{ slide.imageUrl }}" alt="" width="400" height="300" style="cursor: pointer;">
         </div>
       </ngx-slick-carousel>
     </div>

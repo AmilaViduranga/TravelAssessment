@@ -17,7 +17,7 @@ holidayTwo.description = "Lorem Ipsum is simply dummy text of the printing and t
 
 let holidayThree = new PopularHoliday();
 holidayThree.id = 3;
-holidayThree.header = "Location Three";
+holidayThree.header = "Location Thr";
 holidayThree.image = "../../../assets/images/menu-3.jpg";
 holidayThree.price = 500;
 holidayThree.description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
@@ -58,6 +58,6 @@ holidayEight.price = 500;
 holidayEight.description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
 
 let availableHolidays = new Array<PopularHoliday>();
-availableHolidays.push(holidayOne, holidayTwo, holidayThree, holidayFour, holidayFive, holidaySix, holidaySeven, holidayEight);
+availableHolidays.push(holidayOne, holidayTwo, holidayThree, holidayFour, holidayFive, holidaySix);
 
 export const holidayList = availableHolidays;

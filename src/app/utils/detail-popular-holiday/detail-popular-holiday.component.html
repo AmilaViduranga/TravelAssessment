@@ -10,19 +10,19 @@
   <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8 row">
-      <div class="col-sm-3" *ngFor="let holiday of availableHolidays">
+      <div class="col-sm-4" *ngFor="let holiday of availableHolidays">
         <div class="grid__item">
           <div class="card">
-            <img class="card__img" [src]="holiday.image" alt="Snowy Mountains">
+            <img class="card__img img-fluid" [src]="holiday.image" alt="Snowy Mountains">
             <div class="card__content">
               <div class = "row">
                 <div class="col-sm-6">
-                  <h3 class="card__header">{{holiday.header}}</h3>
+                  <h3 class="card__header">{{holiday.header}} <small>(20 review)</small></h3>
                   <rating [(ngModel)]="holiday.rate" [max]="4" [readonly]="true"></rating>
                 </div>
                 <div class="col-sm-2"></div>
-                <div class="col-sm-4" style="padding-top: 30px;">
-                  <span style="color: red;">${{holiday.price}}</span>
+                <div class="col-sm-4" style="padding-top: 10px;">
+                  <h3 style="color: red;" class="pull-right">${{holiday.price}}</h3>
                 </div>
               </div>
               <p>{{holiday.description}}</p>
